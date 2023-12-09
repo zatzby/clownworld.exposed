@@ -24,8 +24,8 @@ a {
 
 .responsive-iframe-container {
   position: relative;
-  overflow: hidden;
-  padding-top: calc(56.25% + 40px);
+  height: calc(100% - 52px);
+  width: 100%;
 }
 
 .responsive-iframe-container iframe {
@@ -42,5 +42,9 @@ a {
     word-spacing: 10px;
     padding: 5px;
     font-size: medium;
+  }
+
+  .responsive-iframe-container {
+    height: calc(100% - 20px); /* Adjust for smaller header */
   }
 }
